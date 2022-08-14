@@ -51,3 +51,36 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #4caf84;
 }
+
+h1{
+    transition: background-color 2s, border-radius 2s;
+    animation: flow 2s infinite;
+    animation-direction: alternate;
+}
+h1:hover{
+    background-color: #4daea1;
+    border-radius: 50%;
+    
+
+}
+
+
+@keyframes flow {
+    0% {margin-left: 3rem;
+        box-shadow: 1px 5px 8px 0px #b3a6a6;
+        background-color: #8dbdb6;
+        border-radius: 50%;
+    }
+    75% {
+        box-shadow: 1px 5px 8px 0px #b3a6a6;
+        background-color: #78d4c5;
+        border-radius: none;
+        border: none;
+    }
+  
+        100%{margin-right: 6rem;
+            box-shadow: 1px 5px 8px 0px #b3a6a6;
+        background-color: rgb(36, 210, 163);
+        border-radius: 50%;
+        }
+}
