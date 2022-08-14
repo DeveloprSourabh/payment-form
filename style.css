@@ -48,9 +48,7 @@ input[type="submit"]{
      width: 100%;
 }
 
-input[type="submit"]:hover{
-    background-color: #4caf84;
-}
+
 
 h1{
     transition: background-color 2s, border-radius 2s;
@@ -69,18 +67,54 @@ h1:hover{
     0% {margin-left: 3rem;
         box-shadow: 1px 5px 8px 0px #b3a6a6;
         background-color: #8dbdb6;
-        border-radius: 50%;
+        border-radius: 50%; 
+        color: rgb(81, 79, 79);
     }
     75% {
         box-shadow: 1px 5px 8px 0px #b3a6a6;
         background-color: #78d4c5;
         border-radius: none;
         border: none;
+    color: rgb(9, 66, 96);
     }
   
         100%{margin-right: 6rem;
             box-shadow: 1px 5px 8px 0px #b3a6a6;
         background-color: rgb(36, 210, 163);
         border-radius: 50%;
+        color: rgb(117, 102, 39);
         }
+}
+
+input[type="submit"]{
+    transition: background-color 4s,  width  1s, border-radius 2s, text-align 1s ;
+    animation-direction: alternate;
+    animation: btn1 4s infinite;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #2aa0c4;
+    border-radius: 50%;
+    box-shadow: -4px 20px 20px 5px #60716e;
+
+}
+
+@keyframes btn1 {
+    0% {
+        background-color: #20c7ffc9;
+        color: #fc2779;
+    }
+    25% {background-color: #ca3c9f;
+    color: #4daea1;
+    }
+
+    50% {background-color: black;
+    color: #f2f2f2;
+    }
+    100% {
+        background-color: #fc2779;
+        color: #000000;
+    }
 }
